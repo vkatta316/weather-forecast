@@ -1,0 +1,368 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.section {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+#loading{
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid #48484a;;
+    border-radius: 100%;
+    margin: auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+
+}
+
+#loading.display{
+    visibility: visible;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.section-content {
+    width: 100%;
+    max-width: 900px;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 16pt;
+}
+
+.grid-5-4 {
+    grid-template-columns: minmax(0,1fr);
+}
+
+.imageContainer {
+    background: url(images/autumnWeather.png) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.main-heading {
+    color: #111111;
+}
+
+.dateStamp {
+    color: #393635;
+    
+}
+.sub-heading {
+    color: #ffffff !important;
+}
+
+.grey-container {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 80%;
+}
+
+.page-container {
+    margin: auto;
+}
+
+#weather-widget .page-container .control-container  {
+    padding-top: 20pt;	
+    align-items: flex-start;
+}
+
+#weather-widget {
+    font-family: 'PT Serif', 'Times New Roman', Times, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #48484a;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-current-location {
+    height: 10pt;
+    width: auto;
+}
+
+.control-el {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 3px;
+}
+
+.button-round.dark, button.button-round.dark {
+    background-color: #48484a;
+    border-color: #48484a;
+    color: #f2f2f2;
+}
+.button-round, button.button-round {
+    border-radius: 16pt;
+    padding: 6pt 8pt;
+    text-decoration: none;
+    color: #48484a;
+    cursor: pointer;
+    border-style: none;
+}
+
+.button-round.dark, button.button-round.dark {
+    background-color: #48484a;
+    border-color: #48484a;
+    color: #f2f2f2;
+}
+
+
+.button-round {
+    border-radius: 0 4pt 4pt 0!important;
+    padding: 0 8pt!important;
+    height: 24pt;
+    width: 90px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+*[data-v-3e6e9f12] {
+    box-sizing: border-box;
+}
+
+h2[data-v-3e6e9f12] {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+*[data-v] {
+    box-sizing : border-box;
+}
+
+.search .search-container {
+    position: relative;
+    
+    
+}
+
+#weather-widget .page-container {
+    margin: auto;
+}
+
+.search .search-container input {
+    border: 1px solid #ececed;
+    border-radius: 4pt;
+    padding: 4pt 8pt;
+    color: #48484a;
+    font-family: 'PT Serif', 'Times New Roman', Times, serif;
+    font-size: 14px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    width: 100%;
+    border-radius: 4pt 0 0 4pt;
+    height: 24pt;
+}
+
+input:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.not-found {
+    height: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.not-found.notFoundOpen {
+    visibility: visible;
+}
+
+.daily-container  {
+    width: 100%;
+}
+
+daily-container .day-list  {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 4pt;
+    height: 320px;
+}
+
+.daily-container .day-list li  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 3pt 4pt;
+    height: 40px;
+    border-radius: 4pt;
+}
+
+.daily-container .day-list  {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 4pt;
+    height: 320px;
+}
+
+.daily-container .day-list li .day-list-values  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+.sub , .sub-color  {
+    color: #8a8a8a;
+}
+
+.sub  {
+    font-size: 14px;
+}
+
+.daily-container h3  {
+    margin-top: 0;
+}
+
+h1,h2{
+    font-family: 'PT Serif', 'Times New Roman', Times, serif;
+    
+}
+h3  {
+    font-size: 18px;
+}
+
+.preloader{
+    content-visibility: visible;
+}
+
+.current-temp {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.current-temp svg {
+    margin-left: -5px;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 100;
+    margin-right: 8pt;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.weather-items {
+    margin-top: 4pt;
+    margin-bottom: 0;
+    padding-left: 1pt;
+    max-width: 400px;
+}
+
+weather-items[currentConditions] {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 20px;
+}
+
+
+.weather-items li[currentConditions] {
+    margin-right: 16pt;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-padding{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+    }
+    .grid-5-4 {
+    grid-template-columns: 5fr 4fr;
+    grid-template-columns: minmax(0,5fr) minmax(0,3fr);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-gap: 16pt;
+    }
+
+    .grey-container {
+        height: 100%;
+    }
+
+    .not-found {
+        justify-content: flex-end;
+    }
+
+    grid-reverse>div:first-child {
+        order: 2;
+    }
+
+    #weather-widget .page-container {
+        max-width: 900px;
+    }
+
+    .section-content {
+        padding: 24pt 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .not-found {
+        justify-content: flex-end;
+        padding: 5px;
+        padding-right: 28pt;
+        align-items: flex-end;     
+    }
+}
+
+@media screen and (min-width: 320px){
+    .controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
